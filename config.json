@@ -1,0 +1,8 @@
+{
+  "program_name": "report_engine",
+  "program_description": "The report engine organizes resources for system reports.",
+  "program_epilog": "OrangeWave Innovative Science, LLC.",
+  "log_location": "/Users/tom/dev/report/logs/",
+  "log_level": 10,
+  "log_prefix": "report_log"
+}

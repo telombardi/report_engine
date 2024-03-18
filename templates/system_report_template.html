@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{server}} Report on {{date}}</title>
+    <link rel="stylesheet" href="report.css">
+  </head>
+  <body>
+    <h1>{{server}} Report on {{date}}</h1>
+    <h2>Summary</h2>
+    <table border="1">
+      <tr><th>Operating System Type</th><td>{{os_type}}</td></tr>
+      <tr><th>Operating System Version</th><td>{{os_version}}</td></tr>
+      <tr><th>CPU Utiliziation</th><td>{{cpu}}%</td></tr>
+      <tr><th>Python Version</th><td>{{python_version}}</td></tr>
+    </table>
+    <h2>Disk Usage Summary</h2>
+    <table border="1">
+      <tr><th>Disk Used</th><td>{{disk_used}}</td></tr>
+      <tr><th>Disk Free</th><td>{{disk_free}}</td></tr>
+      <tr><th>Disk Summary</th><td><img src="{{disk_png}}"></td></tr>
+    </table>
+    <h2>Memory Usage Summary</h2>
+    <table border="1">
+      <tr><th>Memory Used</th><td>{{memory_used}}</td></tr>
+      <tr><th>Memory Free</th><td>{{memory_free}}</td></tr>
+      <tr><th>Memory Summary</th><td><img src="{{memory_png}}"></td></tr>
+    </table>
+    <h2>Filesystem Mount Points</h2>
+    <table border="1">
+      {{mount_points}}
+    </table>
+    <h2>Network Information</h2>
+    <table border="1">
+      <tr><th>MAC Address</th><td>{{mac}}</td></tr>
+    </table>
+    <table border="1">
+      {{nets}}
+    </table>
+    <h2>Python Packages</h2>
+    <table border="1">
+      {{python_packages}}
+    </table>
+  </body>
+</html>
