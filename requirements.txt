@@ -1,3 +1,4 @@
-#dnf==0.0.2.2
+dnf==0.0.2.2
 psutil==5.9.8
 setuptools==57.4.0
+seaborn
